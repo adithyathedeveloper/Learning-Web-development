@@ -1,0 +1,1 @@
+alert("Just say ok, nothing else")
