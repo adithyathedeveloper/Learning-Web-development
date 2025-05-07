@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a vacation form</title>
+</head>
+<body>
+    <header><h2 style="margin-left: 200px;">Fill in the required information to book your vacation</h2></header>
+    <main>
+        <header><h3 style="margin-left: 200px;"><u>Basic Details</u></h3></header>
+        <form action="/submit.php" method="POST">
+        <label for="firstname" style="margin-left: 200px;">Enter the first name</label>
+        <input type="text" name="userfirstname" placeholder="First Name" id="firstname" style="margin-right: 200px;" required>
+        <label for="secondname" >Enter the last name</label>
+        <input type="text" name="userlastname" placeholder="Last Name" id="secondname">
+<br>
+<br>
+<br>
+<br>
+        <div>
+        <label for="emailid" style="margin-left: 200px;">Enter your login email id</label>
+        <input type="email" name="useremailid" placeholder="Your Email Id" id="emailid" style="margin-right: 200px;" required>
+
+        <label for="phonenumber">Enter your login mobile number</label>
+        <input type="tel" name="usermobileno" placeholder="Your mObile number" id="phonenumber" required pattern="[0-9]{10}">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <label for="dob" style="margin-left: 200px;">Enter your date of birth</label>
+    <input type="date" name="dateofbirth" id="dob" required>
+<br>
+<br>
+<br>
+<br>
+<hr style="margin-left: 200px; margin-right: 200px;">
+    <header><h3 style="margin-left: 200px;"><u>Travel information</u></h3></header>
+    <label for="depart" style="margin-left: 200px;">Enter the departure city</label>
+        <input type="text" name="departure" placeholder="Departure city" id="depart" style="margin-right: 200px;" required>
+        <label for="destination" >Enter your destination</label>
+        <input type="text" name="destination" placeholder="Destination place" id="destination" required>
+        <br>
+        <br>
+        <br>
+        <br>
+    <div>
+        <label for="go" style="margin-left: 200px;">Enter travel Starting Date</label>
+        <input type="date" name="leaving" id="go" required>
+        <label for="come" style="margin-left: 200px;">Enter date of returning</label>
+    <input type="date" name="returning" id="come" required>
+    </div>
+    <br>
+    <br>
+        <br>
+        <br>
+   
+    <label for="numoftravellers" style="margin-left: 200px;">Enter number of travellers 
+    </label>
+    <input type="number" name="numberoftravellers" id="numoftravellers" required>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr style="margin-left: 200px; margin-right: 200px;">
+
+
+ <header><h3 style="margin-left: 200px;"><u>Preferences</u></h3></header>
+ <label for="mode" style="margin-left: 200px;">Choose your most preferred mode of travel</label>
+    <select name="Depart" id="mode">
+        <option value="Bus">Buses</option>
+        <option value="Train">Trains</option>
+        <option value="Air">Airways</option>
+        <option value="Cruise">Cruise</option>
+        <option value="ntg">anything</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+    <p style="margin-left: 200px;">food Preferences</p>
+    <label for="mgender" style="margin-left: 200px;">Veg</label>
+    <input type="radio" name="gender" value="male" id="mgender">
+    <label for="fgender">Non Veg</label>
+    <input type="radio" name="gender" id="fgender" value="female"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr style="margin-left: 200px; margin-right: 200px;">
+    <label for="additional" style="margin-left: 200px;">Enter anything else you want to share with us regarding your travel conveniences</label>
+    <br>
+    <textarea name="anything else" id="additional" cols="50" rows="10" style="margin-left: 200px;"></textarea>
+    <br>
+    <br>
+    <br>
+    <br>
+    <label for="conditions" style="margin-left: 200px;">Terms and conditions</label>
+    <input type="checkbox" name="terms" id="conditions" value="yes" required>
+
+
+    
+
+
+</form>
+<img src="submit.png" alt="submission" style="margin-left: 200px;"">
+</main>
+
+</body>
+</html>
