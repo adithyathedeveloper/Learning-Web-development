@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* element selector */
+        h2{
+            background-color: burlywood;
+        }
+
+        /* class selector */
+        .orange{
+            background-color: orange;
+        }
+
+        /* id selector */
+        #green{
+            background-color: green;
+        }
+
+        /* child selector */
+        div > p{
+            background-color: blue;
+        }
+
+        /* descendent selector */
+        div p{
+            background-color: chocolate;
+        }
+        
+        /* universal selector */
+        * {
+            margin: 10px;
+            padding: 10px;
+        }
+
+        /* pseudo selector */
+        a:hover{
+            background-color: cornflowerblue;
+        }
+
+        a:active{
+            background-color: cyan;
+        }
+
+        a:link{
+            color: darkgoldenrod;
+        }
+
+        a:visited{
+            color: darkmagenta;
+        }
+
+        p:first-child{
+            background-color: darkorange;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="orange"> This is a div <p>This is a Paragraph inside a div</p></div>
+    <div id="green"> This also is a div <span> <p>This is also a Paragraph inside a div but is inside a span aswell</p></span></div>
+    <h2>This is for the sake of an example</h2>
+    <a href="https://www.facebook.com" target="_blank">Go to facebook</a>
+    <main><p>I might be the first child</p> <p>And Iam the second child</p></main>
+</body>
+</html>
