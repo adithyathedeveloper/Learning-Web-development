@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts in CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playwrite+DK+Loopet:wght@100..400&display=swap');
+
+        h1 {
+            /* font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            text-decoration: underline; */
+            font-family: "Playwrite DK Loopet", cursive;
+            font-optical-sizing: auto;
+            font-style: normal;
+            letter-spacing: 3px;
+            text-align: center;
+        }
+
+        p {
+            font-family: "Indie Flower", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            line-height: 1.5;
+            letter-spacing: 3px;
+        }
+
+        /* https://codepen.io/web-dot-dev/pen/yLojraG */
+
+        h2{
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-decoration-color: crimson;
+            text-decoration-thickness: 10px;
+            text-decoration-style: dotted;
+            text-indent: 250px;
+        }
+
+        .lorem{
+            border: solid forestgreen 2px;
+            width: 300px;
+            text-overflow: clip;
+            overflow:scroll;
+            /* word-break: break-all;  */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>
+            This is the heading
+        </h1>
+        <h2>
+            This is for some purpose now
+        </h2>
+        <p>
+            this is a paragraph
+        </p>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quos explicabo, quod atque assumenda
+            fugiat quidem, quis eos dignissimos facilis magni! Fugiat aliquid beatae velit delectus maxime dicta tempora
+            asperiores eligendi exercitationem unde vel aut illo, sequi quo quisquam commodi? Sunt esse aliquid
+            similique a! Nisi natus quos provident consequuntur necessitatibus, impedit eum! Debitis, neque soluta.</p>
+    </div>
+</body>
+
+</html>
