@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling</title>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .box{
+        box-sizing: border-box;
+        border: 2px solid darkorchid;
+        display: inline-block;
+        width: 500px;
+        height: 200px;
+        margin: 50px;
+        padding: 50px;
+        /* display: none; */
+    }
+    .box1{
+        /* display: none; */
+        visibility: hidden;
+    }
+</style>
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+</head>
+<body>
+    <div class="box box1">Iam a box</div>
+    <div class="box">Iam a very good box</div>
+    <span>Iam a box in span</span>
+    <span>Iam also a box in span</span>
+</body>
+</html>
