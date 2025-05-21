@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        /* selector specificity=1 */
+        h1{
+            color: blue;
+        }
+        /* selector specificity=10 */
+        .cred{
+            color: red ;
+        }
+        /* selector specificity=10 */
+        .cyellow{
+            color: yellow;
+        }
+        /* selector specificity=10+1=11 */
+        h1.cpurple{
+            color: purple;
+        }
+        /* selector specificity=10 */
+        /* Attribute selector example */
+        [data-x=about]{
+            color: royalblue !important;
+        }
+
+        /* selector specificity=1+10+10+10+10=41  
+        a.harryclass.rohan-class[href]:hover{
+            color: sandybrown;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="cred cyellow cpurple" data-x="about">So now I am learning about CSS Specificity</h1>
+    </div>
+</body>
+</html>
