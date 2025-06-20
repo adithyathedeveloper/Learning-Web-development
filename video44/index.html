@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra edit download page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Indie+Flower&family=Playpen+Sans+Deva:wght@100..800&family=Playwrite+DK+Loopet:wght@100..400&family=Savate:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            width: 100vw;
+            height: 12vh;
+            border: 2px solid white;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-areas: "logo stuffs button";
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            box-shadow: -1px 3px 10px 0px grey;
+        }
+
+        .uelogo {
+            grid-area: logo;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .uelogo img {
+            height: 10vh;
+            cursor: pointer;
+        }
+
+        .objects {
+            grid-area: stuffs;
+            display: flex;
+            gap: 100px;
+            justify-content: flex-start;
+            transform: translateX(40px);
+            font-family: "Space Grotesk", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        .button {
+            grid-area: button;
+        }
+
+        .objects ul {
+            list-style: none;
+            display: flex;
+            gap: 70px;
+        }
+
+        .objects ul li {
+            cursor: pointer;
+        }
+
+        .bnase {
+            display: flex;
+            gap: 8px;
+            justify-content: flex-end;
+        }
+
+        .bnase img {
+            cursor: pointer;
+        }
+
+        .body {
+            width: 100vw;
+            height: 88vh;
+            border: 2px solid white;
+            /* display: grid;
+            grid-template-areas: "ver ver ver ver ver"
+                "fri eng ger ita fri"
+                "fri spa fre por fri"
+                /* "fri jap kor chi fri"; */
+        }
+
+        .space {
+            width: 100vw;
+            height: 8vh;
+            border: 2px solid white;
+        }
+
+        .space1 {
+            width: 100vw;
+            height: 5vh;
+            border: 2px solid white;
+        }
+
+        .version {
+            width: 100vw;
+            height: 8vh;
+            border: 2px solid white;
+            display: grid;
+            grid-template-columns: 0.6fr 1.4fr;
+            grid-template-areas: "fi fc";
+            align-items: center;
+            column-gap: 25px;
+
+            /* grid-area: ver; */
+        }
+
+        .version img {
+            grid-area: fi;
+            justify-self: flex-end;
+        }
+
+        .cont {
+            grid-area: fc;
+        }
+
+
+        .version div p {
+            display: inline;
+        }
+
+        .version div h3 {
+            display: inline;
+        }
+
+        .actualcont {
+            width: 100vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto auto auto;
+            row-gap: 20px;
+            column-gap: 50px;
+            align-content: center;
+            align-items: center;
+            justify-items: center;
+            justify-content: space-evenly;
+        }
+
+        .actualcont>div {
+            display: flex;
+            flex-direction: column;
+            /* Stack text and button vertically */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+        }
+
+        .actualcont div div {
+            display: flex;
+            justify-self: center;
+            align-self: center;
+
+        }
+
+        .downlbutt {
+            height: 25px;
+            width: 150px;
+            background-color: forestgreen;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            font-size: 12px;
+            cursor: pointer;
+
+        }
+
+        .downlbutt a {
+            color: white;
+            text-decoration: none;
+        }
+
+
+        .down1 {
+            width: 250px;
+            height: 150px;
+            border: 2px solid lightgrey;
+            border-radius: 10px;
+            box-shadow: 3px 2px 10px 0px grey;
+            grid-row: 3/4;
+            grid-column: 2/3;
+
+        }
+
+        .down2 {
+            width: 250px;
+            height: 150px;
+            border: 2px solid lightgrey;
+            border-radius: 10px;
+            box-shadow: 3px 2px 10px 0px grey;
+            grid-row: 5/6;
+            grid-column: 2/3;
+
+        }
+
+        .down3 {
+            width: 250px;
+            height: 150px;
+            border: 2px solid lightgrey;
+            border-radius: 10px;
+            box-shadow: 3px 2px 10px 0px grey;
+            grid-row: 1/2;
+            grid-column: 2/3;
+
+        }
+
+        .down4 {
+            width: 250px;
+            height: 150px;
+            border: 2px solid lightgrey;
+            border-radius: 10px;
+            box-shadow: 3px 2px 10px 0px grey;
+            grid-row: 1/2;
+            grid-column: 3/4;
+
+        }
+
+        .down5 {
+            width: 250px;
+            height: 150px;
+            border: 2px solid lightgrey;
+            border-radius: 10px;
+            box-shadow: 3px 2px 10px 0px grey;
+            grid-row: 3/4;
+            grid-column: 3/4;
+
+        }
+
+        .down6 {
+            width: 250px;
+            height: 150px;
+            border: 2px solid lightgrey;
+            border-radius: 10px;
+            box-shadow: 3px 2px 10px 0px grey;
+            grid-row: 3/4;
+            grid-column: 4/5;
+
+        }
+
+
+        .down7 {
+            width: 250px;
+            height: 150px;
+            border: 2px solid lightgrey;
+            border-radius: 10px;
+            box-shadow: 3px 2px 10px 0px grey;
+            grid-row: 1/2;
+            grid-column: 4/5;
+        }
+
+        .down8 {
+            width: 250px;
+            height: 150px;
+            border: 2px solid lightgrey;
+            border-radius: 10px;
+            box-shadow: 3px 2px 10px 0px grey;
+            grid-row: 5/6;
+            grid-column: 3/4;
+
+        }
+
+        .down9 {
+            width: 250px;
+            height: 150px;
+            border: 2px solid lightgrey;
+            border-radius: 10px;
+            box-shadow: 3px 2px 10px 0px grey;
+            grid-row: 5/6;
+            grid-column: 4/5;
+
+        }
+
+        .unobj {
+            font-size: 10px;
+        }
+
+        /* .down1,
+        .down2,
+        .down3,
+        .down4,
+        .down5,
+        .down6,
+        .down7,
+        .down8,
+        .down9 p:first-child {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: normal;
+        } */
+
+        .lang {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+
+        .down1,
+        .down2,
+        .down3,
+        .down4,
+        .down5,
+        .down6,
+        .down7,
+        .down8,
+        .down9 p:first-child {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="everything">
+        <div class="nav">
+            <div class="uelogo">
+                <img src="ultraeditlogo.png" alt="ultraeditlogo">
+            </div>
+            <div class="objects">
+                <ul>
+                    <li>Products</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    <li>Our Company</li>
+                </ul>
+            </div>
+            <div class="bnase"><img height='45px' src="25-255804_black-buy-now-button-hd-png-download.png"
+                    alt="buynowbutton">
+                <img height="45px" src="magnifying-glass-icon-search-icon-free-vector.jpg" alt="searchicon">
+            </div>
+        </div>
+        <div class="body">
+            <div class="space"></div>
+            <div class="version"><img height="45px" src="ultraeditlogo.jpg" alt="ultraeditlogo">
+                <div class="cont">
+                    <h3>Download Ultraedit</h3>
+                    <p>v2025.0(released 2025-06-06)|Hotfix information</p>
+
+                </div>
+            </div>
+            <div class="space1"></div>
+            <div class="actualcont">
+                <div class="down1">
+                    <div class="lang"> Spanish
+                    </div>
+                    <p>española</p>
+                    <div class="downlbutt"><a href="3d_pinball_for_windows_-_space_cadet.exe">Download 64-bit</a>
+                    </div>
+                    <p class="unobj">SHA256
+                        3D85A4AB6BA55590A24CC3BF26EB3
+                        5AC2A7DD3AFC6194AFCC16894C7975506D3</p>
+                </div>
+                <div class="down2">
+                    <div class="lang"> Japanese
+                    </div>
+                    <p>日本語</p>
+                    <div class="downlbutt"><a href="3d_pinball_for_windows_-_space_cadet.exe">Download 64-bit</a>
+                    </div>
+                    <p class="unobj">SHA256
+                        3D85A4AB6BA55590A24CC3BF26EB3
+                        5AC2A7DD3AFC6194AFCC16894C7975506D3</p>
+                </div>
+                <div class="down3">
+                    <div class="lang"> English
+                    </div>
+                    <p>english</p>
+                    <div class="downlbutt"><a href="3d_pinball_for_windows_-_space_cadet.exe">Download 64-bit</a>
+                    </div>
+                    <p class="unobj">SHA256
+                        3D85A4AB6BA55590A24CC3BF26EB3
+                        5AC2A7DD3AFC6194AFCC16894C7975506D3</p>
+                </div>
+                <div class="down4">
+                    <div class="lang"> German
+                    </div>
+                    <p>Deutsch</p>
+                    <div class="downlbutt"><a href="3d_pinball_for_windows_-_space_cadet.exe">Download 64-bit</a>
+                    </div>
+                    <p class="unobj">SHA256
+                        3D85A4AB6BA55590A24CC3BF26EB3
+                        5AC2A7DD3AFC6194AFCC16894C7975506D3</p>
+                </div>
+                <div class="down5">
+                    <div class="lang"> French
+                    </div>
+                    <p>française</p>
+                    <div class="downlbutt"><a href="3d_pinball_for_windows_-_space_cadet.exe">Download 64-bit</a>
+                    </div>
+                    <p class="unobj">SHA256
+                        3D85A4AB6BA55590A24CC3BF26EB3
+                        5AC2A7DD3AFC6194AFCC16894C7975506D3</p>
+                </div>
+                <div class="down6">
+                    <div class="lang"> Portuguese
+                    </div>
+                    <p>português</p>
+                    <div class="downlbutt"><a href="3d_pinball_for_windows_-_space_cadet.exe">Download 64-bit</a>
+                    </div>
+                    <p class="unobj">SHA256
+                        3D85A4AB6BA55590A24CC3BF26EB3
+                        5AC2A7DD3AFC6194AFCC16894C7975506D3</p>
+                </div>
+                <div class="down7">
+                    <div class="lang"> Italian
+                    </div>
+                    <p>italiana</p>
+                    <div class="downlbutt"><a href="3d_pinball_for_windows_-_space_cadet.exe">Download 64-bit</a>
+                    </div>
+                    <p class="unobj">SHA256
+                        3D85A4AB6BA55590A24CC3BF26EB3
+                        5AC2A7DD3AFC6194AFCC16894C7975506D3</p>
+                </div>
+                <div class="down8">
+                    <div class="lang"> Korean
+                    </div>
+                    <p>한국인</p>
+                    <div class="downlbutt"><a href="3d_pinball_for_windows_-_space_cadet.exe">Download 64-bit</a>
+                    </div>
+                    <p class="unobj">SHA256
+                        3D85A4AB6BA55590A24CC3BF26EB3
+                        5AC2A7DD3AFC6194AFCC16894C7975506D3</p>
+                </div>
+                <div class="down9">
+                    <div class="lang"> Chinese
+                    </div>
+                    <p>中国人</p>
+                    <div class="downlbutt"> <a href="3d_pinball_for_windows_-_space_cadet.exe">Download 64-bit</a>
+                    </div>
+                    <p class="unobj">SHA256
+                        3D85A4AB6BA55590A24CC3BF26EB3
+                        5AC2A7DD3AFC6194AFCC16894C7975506D3</p>
+                </div>
+            </div>
+            <div class="space"></div>
+        </div>
+    </div>
+</body>
+
+</html>
