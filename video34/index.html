@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <style>
+        .float{
+            border: 2px solid grey;
+            border-radius: 11px;
+        }
+        img{
+            float: left;
+            display: flow-root;
+            border-radius: 11px;
+            position: relative;
+            top: 5px;
+        }
+        p{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: large;
+            position: relative;
+            left: 5px;
+        }
+        .pa2{
+            /* clear: both; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="float">
+        <div class="floats"><img src="https://i.pinimg.com/236x/cf/de/63/cfde63c09cf181d05df58aa648491296.jpg" alt="Joey Tribbiani"></div>
+        <div class="floats"><p class="pa1">Joey is an Italian-American struggling actor who lives in New York City with his roommate and best friend, Chandler Bing (Matthew Perry), and hangs out in a tight-knit group of his best friends: Chandler, Ross Geller (David Schwimmer), Monica Geller (Courteney Cox), Rachel Green (Jennifer Aniston), and Phoebe Buffay (Lisa Kudrow). He lived with a few other roommates when Chandler moved out to move in with Monica.</p><p class="pa2">Joey is portrayed as promiscuous and dim-witted but good-natured, as well as very loyal, caring, and protective of his friends. The writers of Friends did not intend his character to be stupid, but Matt Leblanc played "dim-witted" so well that it became a part of the character. He is a food-loving womanizer who has had more luck with dates than any of the other group members. In contrast to his persona as the "ladies' man", he has also a marked childish side. He enjoys playing video games and foosball, loves sandwiches and pizza, and is a big fan of Baywatch and Beavis and Butt-Head. As a struggling actor, he is constantly looking for work. He was ordained as a minister in "The One with the Truth About London" and officiated at both Monica and Chandler's and Phoebe and Mike's weddings.</p></div>
+        <div class="floats"></div>
+    </div>
+   
+</body>
+</html>
