@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS positioning</title>
+    <style>
+        .box {
+            margin: 15px;
+            padding: 2px;
+            height: 200px;
+            width: 60vw;
+            border: 2px solid black;
+        }
+
+        .box1 {
+            background-color: blue;
+            position: relative;
+            z-index: 1;
+        }
+
+        .box2 {
+            background-color: blueviolet;
+            position: relative;
+            top: -150px;
+            left: 100px;
+            z-index: 2;
+        }
+
+        .box3 {
+            background-color: brown;
+            position: absolute;
+            top: 350px;
+            left: 120px;
+            z-index: 3;
+        }
+
+        .box4 {
+            background-color: chartreuse;
+        }
+
+        .parentbox {
+            margin: 70px;
+            padding: 10px;
+            border: 2px solid coral;
+            position: absolute;
+        }
+
+        .nav{
+            background-color: crimson;
+            position: sticky;
+            top: 2px;
+            height: 50px;
+            width: 80vw;
+            z-index: 5;
+        }
+
+        .fix{
+            background-color: darkgreen;
+            position: fixed;
+            top: 300px;
+            left: 300px;
+            z-index: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parentbox">
+        <div class="box nav"></div>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box fix"></div>
+    </div>
+    <!-- transform, filter, or perspective properties can also make an element appear as positioned -->
+</body>
+
+</html>
