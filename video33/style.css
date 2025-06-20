@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans&family=Space+Grotesk&display=swap');
+
+:root {
+    --color: rgb(255, 123, 0);
+    --text-color: white;
+    --height: 13vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ancizar Sans", sans-serif;
+}
+
+.navbar {
+    background-color: var(--color);
+    color: var(--text-color);
+    padding: 10px 20px;
+}
+
+.logo {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.nav-links li span {
+    cursor: pointer;
+    position: relative;
+    font-size: 18px;
+}
+
+.nav-links li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-links li span:hover::after {
+    width: 100%;
+}
+
+.nav-search input {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-search input {
+        width: 90vw;
+        max-width: 300px;
+    }
+}
+ 
