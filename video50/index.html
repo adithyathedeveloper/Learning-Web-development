@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 50px;
+            
+        }
+
+        .ima1, .ima2, .ima3{
+            width: 500px;
+            height: 500px;
+            object-fit: contain;
+
+        }
+
+        .ima1{
+            filter: blur(1px) brightness(0.8);
+        }
+
+        .ima2{
+            filter:contrast(0.6) grayscale(40%);
+        }
+
+        .ima3{
+            filter: sepia(0.5) invert(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="ima1" src="Desert.jpg" alt="desert">
+        <img class="ima2" src="Jellyfish.jpg" alt="jellyfich">
+        <img class="ima3" src="Lighthouse.jpg" alt="Lighthouse">
+    </div>
+</body>
+</html>
