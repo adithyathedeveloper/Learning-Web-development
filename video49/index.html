@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS object fit</title>
+    <style>
+        .container,
+        .container1 {
+            width: 500px;
+            height: 600px;
+            border: 4px solid black;
+        }
+
+        /* .container1{
+            padding:0px 10px ;
+        } */
+
+        .container img {
+            width: 500px;
+            height: 600px;
+            object-fit: cover;
+            object-position: bottom left;
+        }
+
+        .container1 img {
+            width: 500px;
+            height: 600px;
+            object-fit: contain;
+            object-position: 10px;
+
+        }
+
+        /* .boxes{
+            display: flex;
+            justify-content: space-around;
+        } */
+
+        .box1 {
+            width: 500px;
+            height: 600px;
+            border: 4px solid black;
+            background-image: url(https://t3.ftcdn.net/jpg/03/91/46/10/360_F_391461057_5P0BOWl4lY442Zoo9rzEeJU0S2c1WDZR.jpg);
+            background-position: top right;
+        }
+
+        .box2{
+            width: 500px;
+            height: 600px;
+            border: 4px solid black;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLat8bZvhXD3ChSXyzGsFVh6qgplm1KhYPKA&s);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        /* body{
+            background-image: url(https://t3.ftcdn.net/jpg/03/91/46/10/360_F_391461057_5P0BOWl4lY442Zoo9rzEeJU0S2c1WDZR.jpg);
+        } */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 50px;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            justify-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="container">
+            <img src="Penguins (2).jpg" alt="Penguins">
+        </div>
+        <div class="container1">
+            <img src="Penguins (2).jpg" alt="Penguins">
+        </div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+
+</html>
