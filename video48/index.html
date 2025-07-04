@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Animation</title>
+    <style>
+        .box {
+            height: 121px;
+            width: 121px;
+            background-color: red;
+            border-radius: 70px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: finaldest 10s ease-out 2s infinite;
+            /* transform: translateX(800%); */
+
+
+        }
+
+        .container {
+            position: relative;
+            height: 80vh;
+            width: 80vw;
+            background-color: blue;
+        }
+
+        /* .box1{
+            height: 121px;
+            width: 121px;
+            background-color: yellow;
+            border-radius: 70px;
+            position: absolute;
+            bottom: 0;
+            left: 241px;
+        } */
+
+        @keyframes finaldest {
+            0% {
+                transform: translate(0px, 0);
+            }
+
+            10% {
+                transform: translate(241px,-150%);
+            }
+
+            20% {
+                transform: translate(362px,0);
+            }
+
+            40% {
+                transform:translate(484px,-150%);
+            }
+
+            50% {
+                transform: translate(605px,0%);
+            }
+
+            70% {
+                transform: translate(726px,-150%);
+            }
+
+            80% {
+                transform: translate(847px,0);
+            }
+
+            100% {
+                transform: translate(968px,0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+        </div>
+        <div class="box1"></div>
+    </div>
+</body>
+
+</html>
