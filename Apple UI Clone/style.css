@@ -1,0 +1,36 @@
+body{
+    color: #ffffff;
+}
+
+.nav{
+    width: 100vw;
+    height: 5vh;
+    background-color: #181818;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-left a{
+    color: #aaaaaa;
+    text-decoration: none;
+    
+}
+
+.nav-right a{
+    color: #aaaaaa;
+    text-decoration: none;
+    
+}
+
+.nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
