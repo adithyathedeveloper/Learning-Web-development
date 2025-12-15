@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ghoda{
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container lassan ghoda">
+        <div class="box box1" id="Thisisid" data-createdby="me" data-Icanfillinanythinghere="Yesyouarerightyoucan">Hey Iam a box</div>
+        <div class="box box2" id="Thisissecondid">Hey Iam a box</div>
+    </div>
+    <script>
+        let some= document.createElement("div");
+        some.innerHTML="<b>The world is Maya, an illusion</b>-Shankaracharya"
+        some.setAttribute("class","thethirdboxwithsomecontentf");
+
+
+        let anothersome =document.createElement("div")
+        anothersome.innerHTML="The world is Maya, an Illusion"
+        anothersome.setAttribute("class","forprepend")
+
+
+        let thirdsome =document.createElement("div")
+        thirdsome.innerHTML="The world is Maya, an Illusion"
+        thirdsome.setAttribute("class","forbefore")
+        
+        
+        let fourthsome =document.createElement("div")
+        fourthsome.innerHTML="The world is Maya, an Illusion"
+        fourthsome.setAttribute("class","forafter")
+
+
+        document.querySelector(".container").append(some)
+        document.querySelector(".container").prepend(anothersome)
+        document.querySelector(".container").before(thirdsome)
+        document.querySelector(".container").after(fourthsome)
+
+        let cont = document.querySelector(".container")
+        cont.insertAdjacentHTML("beforebegin","<b>Yes Iam under water and Iam able to breath here, woohoo, Iam a super human at this point!</b>")
+        cont.insertAdjacentHTML("afterbegin","<b>Yes Iam under water and Iam able to breath here, woohoo, Iam a super human at this point!</b>")
+        cont.insertAdjacentHTML("afterend","<b>Yes Iam under water and Iam able to breath here, woohoo, Iam a super human at this point!</b>")
+        cont.insertAdjacentHTML("beforeend","<b>Yes Iam under water and Iam able to breath here, woohoo, Iam a super human at this point!</b>")
+    </script>
+</body>
+</html>
+A thing to note is that this content is not what all the video told about. Please refer video if coming here for revision -Adithya
