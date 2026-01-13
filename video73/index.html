@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container {
+            height: 140px;
+            width: auto;
+            background-color: black;
+            display: flex;
+            color: azure;
+            gap: 20px
+        }
+
+        .container img {
+            height: 120px;
+            position: relative;
+            padding-left: 20px;
+            padding-top: 10px;
+            border-radius: 15%;
+        }
+
+        h2 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: large;
+            margin-bottom: 0;
+        }
+
+        .belowtitle {
+            display: flex;
+            gap: 5px;
+        }
+
+        .belowtitle p {
+            color: rgb(212, 212, 212);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* flex-direction: column; */
+        }
+        .length{
+            position: relative;
+            bottom: 30px;
+            left: 175px;
+            height: 22px;
+            width: 44px;
+            background-color: black;
+            border-radius: 15%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="inandonimage"><img class="thumbnail" src="https://i.ytimg.com/vi/UrsmFxEIp5k/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBm9X2Vozsbpfw8ihb1mR7DCytnWQ"
+            alt="justworkingout">
+        <div class="length">31:20</div>
+        </div>
+        
+        <div class="texters">
+            <h2 class="vidtitle">Python Tutorial For Beginners in Hindi | Complete Python Course 🔥</h2>
+            <div class="belowtitle">
+                <p class="channelname">CodeWithHarry</p>
+                <P>.</P>
+                <P class="views">727k views</P>
+                <p>.</p>
+                <p class="monthsold">2 months ago</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
