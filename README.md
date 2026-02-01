@@ -1,2 +1,2 @@
-So this file is my learning setup for the whole webdevelopment learning journey, here, the programs I try and learn from sigma web development course by code with harry can be found.
-Not only his codes, maybe the codes which might come along my way in the learning process can be part of this repository.
+This repository is the record of my webdevelopment learning journey. All the codes that took to convert myself into an webdeveloper will be given in this repository.
+Before all, I would like to acknowledge Harry Bhai(Code With Harry), as his course Sigma WebDevelopment is a major part of my learning journey.
