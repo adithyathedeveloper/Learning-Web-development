@@ -1,0 +1,10 @@
+let a = prompt("Enter any string:")
+console.log(a)
+let array = a.split("")
+console.log(array)
+let barray = array.reverse()
+console.log(barray)
+let c=barray.join("")
+console.log(a+c)
+a= a+c 
+console.log(a)
