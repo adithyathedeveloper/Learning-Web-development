@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <style>
+        .theline {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="leftnav">
+            <img src="spotifylogo.svg" alt="logo">
+            <img src="/elements/home.svg" alt="home">
+            <div class="search-wrapper">
+                <img src="./elements/searchtry.svg" class="icon left-icon irresponsive">
+                <input type="text" class="search"
+                    placeholder="What do you want to play?                                  |">
+                <img src="./elements/browse.svg" class="icon right-icon">
+                <img src="./elements/searchtry.svg" class="icon left-icon responsive">
+            </div>
+            <img src="./elements/hamburger-menu-svgrepo-com.svg" alt="menu" class="hamburger invert">
+            <img src="./elements/cross-svgrepo-com.svg" alt="menuclose" class="cross invert">
+        </div>
+
+        <ul class="rightnav">
+            <li class="rinavcon">Premium</li>
+            <li class="rinavcon">Support</li>
+            <li class="rinavcon">Download</li>
+            <li class="theline" style="color: white; font-size: 26px;">|</li>
+            <img class="install" src="/elements/install.svg" alt="installation symbol">
+            <li class="rinavcono">Install App</li>
+            <li class="rinavcono">Sign up</li>
+            <button class="login">Log in</button>
+        </ul>
+
+
+    </nav>
+    <ul class="hamrightnav">
+        <li class="rinavcon">Premium</li>
+        <li class="rinavcon">Support</li>
+        <li class="rinavcon">Download</li>
+        <li class="rinavcono">Install App</li>
+        <li class="rinavcono">Sign up</li>
+        <li class="rinavcono">Log in</li>
+    </ul>
+    <div class="content flex">
+        <div class="leftcontent library">
+            <div class="firstline flex">
+                <p>Your Library</p>
+
+                <button><img class="invert" src="./elements/plus.svg" alt="plus"> Create</button>
+
+
+            </div>
+            <div class="everinlefcon">
+                <!-- <div class="boxone boxinlibrary">
+                <p class="firstinboxone fontfamily">Create your first playlist</p>
+                <p class="secondinboxone fontfamily">It's easy, we'll help you</p>
+                <button class="boinlibbutton">Create playlist</button>
+            </div> -->
+                <!-- <div class="boxtwo boxinlibrary">
+                <p class="firstinboxtwo fontfamily">Let's find some podcasts to follow</p>
+                <p class="secondinboxtwo fontfamily">We'll keep you updated on the latest episodes</p>
+                <button class="boinlibbutton">Browse podcasts</button>
+            </div> -->
+                <div class="songsinlibrary">
+                    <ul>
+                        <!-- <li>1.Song Name</li> -->
+                        <li>
+                            <img src="./elements/music-note-svgrepo-com.svg" alt="musicnotelogo" class="musicnote">
+                            <div class="info">
+                                <div class="songname">Song Name</div>
+                                <div class="artistname">Artist Name</div>
+                            </div>
+                            <div><img src="./elements/playforlibrary.svg" alt="Play"></div>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <br>
+                <div class="remaining">
+                    <div class="remone fontfamily rem">
+                        <a href="#" class="rema">Legal</a>
+                        <a href="#" class="rema">Safety & Privacy Center</a>
+                        <a href="#" class="rema">Privacy Policy</a>
+                        <a href="#" class="rema">Cookies</a>
+                    </div>
+                    <div class="remtwo fontfamily rem">
+                        <a href="#" class="rema">About Ads</a>
+                        <a href="#" class="rema">Accessibility</a>
+                    </div>
+                    <div class="remthree fontfamily">
+                        <a href="#" class="rema">Cookies</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <Button class="language-button fontfamily">
+                <img class="invert" src="./elements/language.svg" alt="Language"> English
+            </Button>
+        </div>
+
+        <div class="rightcontent home">
+            <div class="trending">
+                <div class="rigsidfir">
+                    <h2 class="fontfamily trendso">Spotify Playlists</h2>
+                    <h5 class="fontfamily shomod">Show all</h5>
+                </div>
+                <div class="cardtrending">
+                    <div class="cardonetrend indisongs playlist" data-folder="Melodies">
+                        <img class="cards" src="./elements/Playlistimgs/MicrosoftTeams-image(1.jpg"
+                            alt="Bairan">
+                        <h5 class="fontfamily nameofthesong">Melodies</h5>
+                        <p class="fontfamily nameoftheartist">Endless Nights with Melodies</p>
+                        <img src="./elements/playbutton.svg" alt="Play button" class="playbutton">
+                    </div>
+                    <div class="cardtwotrend indisongs playlist" data-folder="Sadsongs">
+                        <img class="cards" src="./elements/Playlistimgs/images (2).jpg"
+                            alt="Pavazha Malli">
+                        <h5 class="fontfamily nameofthesong">Sad Songs</h5>
+                        <p class="fontfamily nameoftheartist">Your Company Along Tears and Pillows</p>
+                        <img src="./elements/playbutton.svg" alt="Play button" class="playbutton">
+                    </div>
+                    <div class="cardthreetrend indisongs playlist" data-folder="Itemsongs">
+                        <img class="cards" src="./elements/Playlistimgs/pooja-hegdes-item-song-rangasthalam(.jpg"
+                            alt="Seesha">
+                        <h5 class="fontfamily nameofthesong">Item Songs</h5>
+                        <p class="fontfamily nameoftheartist">Cheer Up with Some Steam</p>
+                        <img src="./elements/playbutton.svg" alt="Play button" class="playbutton">
+                    </div>
+                    <div class="cardfourtrend indisongs playlist" data-folder="Kuthu">
+                        <img class="cards" src="./elements/Playlistimgs/ab67616d0000b273917ba668ae6ef2ca7f1232f4.jpg"
+                            alt="Bairi">
+                        <h5 class="fontfamily nameofthesong">Dance Songs</h5>
+                        <p class="fontfamily nameoftheartist">Dance Until Your Legs Can</p>
+                        <img src="./elements/playbutton.svg" alt="Play button" class="playbutton">
+                    </div>
+                    <div class="cardfivetrend indisongs playlist" data-folder="Lovesongs">
+                        <img class="cards" src="./elements/Playlistimgs/images (3).jpg"
+                            alt="Inkem Inkem Inkem Kaavaale">
+                        <h5 class="fontfamily nameofthesong">Timeless Love Songs</h5>
+                        <p class="fontfamily nameoftheartist">Experience the Love of your Life</p>
+                        <img src="./elements/playbutton.svg" alt="Play button" class="playbutton">
+                    </div>
+ 
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="playbar">
+        <div class="buttonsandinfo">
+            <div class="songinfo fontfamily"></div>
+            <div class="playerbuttons">
+                <img id="previous" src="./elements/previous.svg" alt="Previous" class="invert">
+                <img id="play" src="./elements/playforplaybar.svg" alt="Play" class="invert">
+                <img id="next" src="./elements/next.svg" alt="Next" class="invert">
+            </div>
+            <div class="timeline fontfamily"></div>
+            <div class="volumebar"><img src="./elements/volume-full-svgrepo-com.svg" alt="volume" id="volume" class="volume invert">
+                    <!-- <input type="range" name="" id="volume-range" min="0" max="100" value="100"> -->
+                     <div class="volseekbar">
+            <div class="volcircle"></div>
+        </div>
+            </div>
+        </div>
+
+
+        <div class="seekbar">
+            <div class="circle"></div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
