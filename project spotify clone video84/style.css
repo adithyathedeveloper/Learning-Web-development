@@ -11,6 +11,8 @@ body{
     align-items: center;
     padding-top: 6px;
     position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .leftnav,
@@ -615,6 +617,10 @@ margin-left: 26px;
   align-items: center;
   justify-content: center;
   gap: 20px;
+    /* position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 200; */
 }
 .playerbuttons{
   display: flex;
@@ -830,6 +836,10 @@ margin-left: 26px;
     flex-direction: column;
     gap: 20px;
     height:20vh;
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
   }
   .buttonsandinfo{
     width: 100%;
@@ -841,7 +851,7 @@ margin-left: 26px;
     width: 20%;
   }
   .rightcontent{
-    height: 70vh;
+    height: 84vh;
   }
   .hamrightnav{
     left: 82%;
@@ -867,7 +877,7 @@ margin-left: 26px;
     display: none;
   }
   .rightcontent{
-    height: 75vh;
+    height: 84vh;
   }
   .playerbuttons{
   display: flex;
@@ -907,7 +917,7 @@ margin-left: 26px;
     height: 38px;
   }*/
   .rightcontent {
-    height: 80vh;
+    height: 84vh;
   }
 
   .playbar {
