@@ -297,10 +297,15 @@ Array.from(document.getElementsByClassName("playlist")).forEach(e=>{
         songs = await getsongs(`songs/${item.currentTarget.dataset.folder}`)
         
         // item.dataset.folder
-                document.querySelector(".leftcontent").style.left = "0";
-        // document.querySelector(".hamrightnav").style.display = "block";
+        if (window.innerWidth <= 1200) {
+        document.querySelector(".leftcontent").style.left = "0";
         document.querySelector(".hamburger").style.display = "none";
         document.querySelector(".cross").style.display = "block";
+    }
+        //         document.querySelector(".leftcontent").style.left = "0";
+        // // document.querySelector(".hamrightnav").style.display = "block";
+        // document.querySelector(".hamburger").style.display = "none";
+        // document.querySelector(".cross").style.display = "block";
 
 
             let firstSong = document.querySelector(".songsinlibrary").getElementsByTagName("li")[0].querySelector(".info").firstElementChild.innerHTML;
