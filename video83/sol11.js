@@ -13,6 +13,6 @@ function filterProducts(products,criteria){
     }
     }
 
-filterProducts(arr,"regular")
+filterProducts(arr,"electronics")
 console.log(arr)
 console.log(resarr)

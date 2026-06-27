@@ -7,7 +7,7 @@ async function ohname(ar) {
         }
         setTimeout(() => {
             resolve(ar);
-        },500)
+        },5000)
 
 })};
 console.log(ohname(array))

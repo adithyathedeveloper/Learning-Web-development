@@ -6,6 +6,7 @@ for (let i = 0; i < boxes.length; i++) {
     let b = Math.floor(Math.random() * 256)
 
     boxes[i].style.color = `rgb(${r}, ${g}, ${b})`
+    // console.log("first one")
 }
 for (let i = 0; i < boxes.length; i++) {
     let r = Math.floor(Math.random() * 256)
@@ -13,4 +14,5 @@ for (let i = 0; i < boxes.length; i++) {
     let b = Math.floor(Math.random() * 256)
 
     boxes[i].style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+    // console.log("second one")
 }

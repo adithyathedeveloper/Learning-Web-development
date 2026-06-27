@@ -24,6 +24,7 @@ document.querySelectorAll(".box").forEach(e =>{
 console.log(document.getElementsByTagName("div")) 
 
 let e = document.getElementsByTagName("div")
+console.log(e)
 console.log(e[4].matches("#thisisid"))
 console.log(e[3].matches("#thisisid"))
 console.log(e[3].closest(".container"))

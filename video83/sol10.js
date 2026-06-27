@@ -12,10 +12,21 @@ function brewCoffee(x) {
         }, randomDelay);
     });
 }
+function coffeedone(x) {
+    return new Promise((resolve) => {
+        const randomDelay = Math.floor(Math.random() * 3000) + 1000;
+
+        setTimeout(() => {
+            resolve("Coffee " + x + "  is done");
+        }, randomDelay);
+    });
+}
 async function theop(y) {
     const content= await brewCoffee(y);
 
     processing.textContent = content;
+
+    const done = await coffeedone(y);
     processed.textContent ="Your coffee  " + tpcofee + "  is ready"
 }
 theop(tpcofee)

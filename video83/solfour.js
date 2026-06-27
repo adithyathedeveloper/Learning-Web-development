@@ -29,7 +29,7 @@ for (let i = 0; i < a.length; i++) {
         counter1 = counter1 + 1
     }
     else {
-        counter1 = 0
+        counter1 = counter1 + 0
     }
 }
 if (counter1 == 0) {

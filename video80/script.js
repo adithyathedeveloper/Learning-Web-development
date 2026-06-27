@@ -39,9 +39,12 @@ class Mikasa extends Homosapien {
 }
 
 let human = new Homosapien("male");
+human.eats()
+human.jumps()
 console.log(human);
 
 let aotcharacter = new Mikasa("female");
 console.log(aotcharacter);
+aotcharacter.jumps()
 
 
