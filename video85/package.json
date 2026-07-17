@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "learning backend for the very first time",
+  "keywords": [
+    "backend",
+    "nodejs",
+    "npm"
+  ],
+  "license": "ISC",
+  "author": "Adithya",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "slugify": "^1.6.9"
+  }
+}
