@@ -12,8 +12,9 @@
 
 <body class="bg-black">
     <div class="mainscreen flex bg-black container mx-auto">
-        <div class="nav w-[80%] bg-black text-white">
-            <ul class="flex flex-col text-2xl space-y-1 items-start w-[50%] ml-auto justify-start">
+        <div class="nav sm:block hidden w-[20%] xl:w-[80%] bg-black text-white">
+            <ul
+                class="flex flex-col text-2xl space-y-1 items-center xl:items-start w-[80%] xl:w-[50%] ml-auto justify-start">
                 <li class="flex flex-end items-center h-8 w-fit my-4 px-4">
                     <div class="logo invert flex justify-center items-center hover:rounded-full hover:cursor-pointer ">
                         <svg viewBox="0 0 24 24" aria-hidden="true"
@@ -28,55 +29,90 @@
                 </li>
                 <li
                     class="flex justify-start items-center h-12 w-fit hover:bg-[#333333]  hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold">
-                    <img src="/assets/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 (1).svg" alt=""> &nbsp; Home
+                    <img src="/assets/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 (1).svg" alt=""><span
+                        class="hidden xl:block">&nbsp; Home</span>
                 </li>
                 <li
                     class="flex justify-start items-center h-12 w-fit hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold">
-                    <img src="/assets/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> &nbsp; Explore
+                    <img src="/assets/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span
+                        class="hidden xl:block">&nbsp; Explore </span>
                 </li>
                 <li
                     class="flex justify-start items-center h-12 w-fit hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold">
-                    <img src="/assets/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">&nbsp;
-                    Notifications
+                    <img src="/assets/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span
+                        class="hidden xl:block">&nbsp;
+                        Notifications </span>
                 </li>
                 <li
                     class="flex justify-start items-center h-12 w-fit hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold">
-                    <img src="/assets/person_add_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> &nbsp; Follow
+                    <img src="/assets/person_add_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span
+                        class="hidden xl:block">&nbsp; Follow </span>
                 </li>
                 <li
                     class="flex justify-start items-center h-12 w-fit hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold">
-                    <img src="/assets/chat_bubble_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""> &nbsp; Chat
+                    <img src="/assets/chat_bubble_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span
+                        class="hidden xl:block">&nbsp; Chat </span>
                 </li>
                 <li
                     class="flex justify-start items-center h-12 w-fit hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold">
-                    <img class="w-8 h-8 invert" src="/assets/grok.svg" alt="">&nbsp; Grok
+                    <img class="w-8 h-8 invert" src="/assets/grok.svg" alt=""><span class="hidden xl:block">&nbsp; Grok
+                    </span>
                 </li>
                 <li
                     class="flex justify-start items-center h-12 w-fit hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold">
-                    <img src="/assets/bookmarks.svg" alt="">&nbsp; History
+                    <img src="/assets/bookmarks.svg" alt=""><span class="hidden xl:block">&nbsp; History </span>
                 </li>
                 <li
                     class="flex justify-start items-center h-12 w-fit hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold">
-                    <img src="/assets/verified.svg" alt="">&nbsp; Premium
+                    <img src="/assets/verified.svg" alt=""><span class="hidden xl:block">&nbsp; Premium </span>
                 </li>
                 <li
                     class="flex justify-start items-center h-12 w-fit hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold">
-                    <img src="/assets/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">&nbsp; Profile
+                    <img src="/assets/person_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span
+                        class="hidden xl:block">&nbsp; Profile </span>
                 </li>
                 <li
                     class="flex justify-start items-center h-12 w-fit hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold">
-                    <img src="/assets/pending_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">&nbsp; More
+                    <img src="/assets/pending_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span
+                        class="hidden xl:block">&nbsp; More </span>
                 </li>
                 <li
-                    class="flex justify-center items-center bg-white text-black h-12 w-[90%] hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer  text-lg font-bold rounded-full">
+                    class=" justify-start items-center h-12 w-fit hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold flex xl:hidden ">
+                    <img src="/assets/edit_square.svg" alt=""><span class="hidden">&nbsp; Post </span>
+                </li>
+                <li
+                    class="justify-center items-center bg-white text-black h-12 w-[90%] hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer  text-lg font-bold rounded-full hidden xl:flex">
                     Post
                 </li>
-                
+                <li
+                    class=" justify-start items-center h-12 w-full hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold my-4 hidden xl:flex">
+                    <span class="flex rounded-lg p-2 my-2 w-100% justify-start cursor-pointer hover:bg-[#333333] space-y-2">
+                    <span class="flex justify-start space-x-1">
+                        <img class="w-10 h-10 rounded-full my-2" src="/assets/ChatGPT Image Jun 30, 2026, 06_22_01 PM.png" alt="Ravindrasinh jadeja">
+                        <span class="flex-col hidden xl:flex">
+
+                            <h6 class="text-white font-bold">Adithya</h6>
+                            <span class="text-gray-400 font-light text-sm">@adithyaismyname</span>
+                        </span></span>
+                    
+
+                </span>
+                </li>
+                <li
+                    class="flex justify-start items-center h-12 w-fit hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold  xl:hidden">
+                    <img class="h-10 w-10 rounded-full my-2" src="/assets/ChatGPT Image Jun 30, 2026, 06_22_01 PM.png" alt=""><span
+                        class="hidden">&nbsp; More </span>
+                </li>
+
             </ul>
 
         </div>
         <div class="main w-full border border-x-[#9CA3AF]">
-            <div class="top flex ">
+            <div
+                    class="flex justify-start items-center h-12 w-fit hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold sm:hidden">
+                    <img class="h-10 w-10 rounded-full my-2" src="/assets/ChatGPT Image Jun 30, 2026, 06_22_01 PM.png" alt=""><span class=" block sm:hidden text-white">&nbsp; Home</span>
+                </div>
+            <div class="top flex sticky">
                 <div
                     class="left text-white w-1/2 flex flex-col justify-center items-center hover:bg-[#333333]  hover:cursor-pointer ">
                     For You
@@ -87,7 +123,8 @@
                     Following</div>
                 <div
                     class="Timelines flex justify-start items-center h-12 w-fit hover:bg-[#333333]  hover:cursor-pointer px-4 text-lg font-bold">
-                    <img src="/assets/add.svg" alt="manage timelines"></div>
+                    <img src="/assets/add.svg" alt="manage timelines">
+                </div>
 
             </div>
             <div class="lineaftertop bg-[#9CA3AF] h-px w-full"></div>
@@ -97,31 +134,82 @@
                         class="w-10 h-10 rounded-full my-2">
                     <h3 class="text-lg text-gray-400">What's happening?</h3>
                 </div>
-                <div class="othersymbolsandmore flex flex-row justify-between">
-                    <div class="othersymbols flex flex-row items-center justify-start mx-16">
-                        <img  src="/assets/imagelogo.svg" alt="image" class="w-6 h-6 mx-1.5 my-2 cursor-pointer">
-                        <img  src="/assets/gif_box.svg" alt="gifbox" class="w-6 h-6 mx-1.5 my-2 cursor-pointer">
-                        <img  src="/assets/votingpoll.svg" alt="voting poll" class="w-6 h-6 mx-1.5 my-2 cursor-pointer">
-                        <img  src="/assets/smiley.svg" alt="smiley" class="w-6 h-6 mx-1.5 my-2 cursor-pointer">
-                        <img  src="/assets/calendar_clock.svg" alt="calendar clock" class="w-6 h-6 mx-1.5 my-2 cursor-pointer">
-                        <img  src="/assets/location.svg" alt="location" class="w-6 h-6 mx-1.5 my-2 cursor-pointer">
-                        <img  src="/assets/flag2.svg" alt="flag2" class="w-6 h-6 mx-1.5 my-2 cursor-pointer">
+                <div class="othersymbolsandmore flex flex-col sm:flex-row justify-between">
+                    <div class="othersymbols flex flex-row items-center justify-start mx-6 sm:mx-16">
+                        <img src="/assets/imagelogo.svg" alt="image" class="w-6 h-6 mx-0.5 sm:mx-1.5 my-2 cursor-pointer">
+                        <img src="/assets/gif_box.svg" alt="gifbox" class="w-6 h-6 mx-0.5 sm:mx-1.5 my-2 cursor-pointer">
+                        <img src="/assets/votingpoll.svg" alt="voting poll" class="w-6 h-6 mx-0.5 sm:mx-1.5 my-2 cursor-pointer">
+                        <img src="/assets/smiley.svg" alt="smiley" class="w-6 h-6 mx-0.5 sm:mx-1.5 my-2 cursor-pointer">
+                        <img src="/assets/calendar_clock.svg" alt="calendar clock"
+                            class="w-6 h-6 mx-0.5 sm:mx-1.5 my-2 cursor-pointer">
+                        <img src="/assets/location.svg" alt="location" class="w-6 h-6 mx-0.5 sm:mx-1.5 my-2 cursor-pointer">
+                        <img src="/assets/flag2.svg" alt="flag2" class="w-6 h-6 mx-0.5 sm:mx-1.5 my-2 cursor-pointer">
                     </div>
                     <div class="postbutton mx-4">
                         <button
                             class="bg-[#9CA3AF] text-black font-bold rounded-full w-full h-10 px-4 my-2 cursor-pointer ">Post</button>
                     </div>
-                    
+
                 </div>
                 <div class="lineaftertop bg-[#9CA3AF] h-[0.5px] w-full"></div>
-                <div class="justchecking">
-                    <video src=""></video>
+                <div class="Post1">
+                    <div class="whatshapp flex flex-row items-center mx-4 gap-0.5">
+                    <img src="/assets/ChatGPT Image Jun 30, 2026, 06_22_01 PM.png" alt="profile"
+                        class="w-10 h-10 rounded-full my-2">
+                        <div class="toplayofpost flex flex-col"> <div class="detailsofaccount flex flex-col sm:flex-row justify-start items-start sm:items-center mx-1 gap-0.5">
+                            <h3 class=" text-white">Adithya</h3>
+                            <span class="text-gray-400 font-light text-sm">@adithyaismyname</span> 
+                            <h3 class="text-gray-400">.Aug 30</h3>
+                        </div>
+                        <div class="text-white mx-1 text-[14px]">Musk act4</div></div>
+                       
+                       
+                    </div>
+                    <div class="postcontent flex flex-col justify-center items-center">
+                        <img src="/assets/muskmeme.jpeg" alt="Musk Meme" class="w-[90%] rounded-2xl h-auto my-2">
+                        <div class="w-full">
+                            <span class="symbols flex flex-row items-center justify-around">
+                                <img src="/assets/commentbubble.svg" alt="comment bubble" class="w-6 h-6 mx-0.5 sm:mx-1.5 my-2 cursor-pointer">
+                                <img src="/assets/repost.svg" alt="repost" class="w-6 h-6 mx-0.5 sm:mx-1.5 my-2 cursor-pointer">
+                                <img src="/assets/heart.svg" alt="heart" class="w-6 h-6 mx-0.5 sm:mx-1.5 my-2 cursor-pointer">
+                                <img src="/assets/barchart.svg" alt="views" class="w-6 h-6 mx-0.5 sm:mx-1.5 my-2 cursor-pointer">
+                            </span>
+                        </div>
+                    </div>
                 </div>
+                <div class="lineaftertop bg-[#9CA3AF] h-[0.5px] w-full"></div>
+                <div class="Post2">
+                    <div class="whatshapp flex flex-row items-center mx-4 gap-0.5">
+                    <img src="/assets/ChatGPT Image Jun 30, 2026, 06_22_01 PM.png" alt="profile"
+                        class="w-10 h-10 rounded-full my-2">
+                        <div class="toplayofpost flex flex-col"> <div class="detailsofaccount flex flex-col sm:flex-row justify-start items-start sm:items-center mx-1 gap-0.5">
+                            <h3 class=" text-white">Adithya</h3>
+                            <span class="text-gray-400 font-light text-sm">@adithyaismyname</span> 
+                            <h3 class="text-gray-400">.Aug 30</h3>
+                        </div>
+                        <div class="text-white mx-1 text-[14px]">This one really made me laugh...🤣</div></div>
+                       
+                       
+                    </div>
+                    <div class="postcontent flex flex-col justify-center items-center">
+                        <img src="/assets/lionmeme.jpeg" alt="Musk Meme" class="w-[90%] rounded-2xl h-auto my-2">
+                        <div class="w-full">
+                            <span class="symbols flex flex-row items-center justify-around">
+                                <img src="/assets/commentbubble.svg" alt="comment bubble" class="w-6 h-6 mx-0.5 sm:mx-1.5 my-2 cursor-pointer">
+                                <img src="/assets/repost.svg" alt="repost" class="w-6 h-6 mx-0.5 sm:mx-1.5 my-2 cursor-pointer">
+                                <img src="/assets/heart.svg" alt="heart" class="w-6 h-6 mx-0.5 sm:mx-1.5 my-2 cursor-pointer">
+                                <img src="/assets/barchart.svg" alt="views" class="w-6 h-6 mx-0.5 sm:mx-1.5 my-2 cursor-pointer">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lineaftertop bg-[#9CA3AF] h-[0.5px] w-full"></div>
+                
             </div>
 
 
         </div>
-        <div class="thirdside w-full bg-black">
+        <div class="thirdside w-full bg-black lg:block hidden">
             <div class="search">
                 <input type="text" placeholder="Search"
                     class=" text-white rounded-full w-[60%] h-10 px-4 mx-4 my-4 border border-x-[#9CA3AF]">
@@ -131,7 +219,7 @@
                 <p class="text-gray-400">Get rid of ads, see your analytics, boost your replies and unlock 20+ features.
                 </p>
                 <button
-                    class="bg-[rgb(29,155,240)] text-white rounded-full w-[34%] h-10 px-4 my-2 cursor-pointer ">Subscribe</button>
+                    class="bg-[rgb(29,155,240)] text-white rounded-full w-[34%] h-10 px-4 my-2 cursor-pointer flex justify-center items-center ">Subscribe</button>
             </div>
             <div class="whatshappening w-[60%] bg-black rounded-lg border border-[#9CA3AF] mx-4 my-1 p-4">
                 <h3 class="text-white text-lg font-bold">What's Happening</h3>
@@ -186,6 +274,40 @@
                         class="bg-white text-black rounded-full w-[24%] h-8 px-4 my-2 flex justify-center items-center font-bold cursor-pointer">Follow</button>
 
                 </span>
+            </div>
+        </div>
+        <div class="footernav fixed bottom-0 left-0 w-full sm:hidden">
+            <div class=" w-full bg-black text-white">
+                <ul class="flex flex-row text-2xl space-y-1 items-center xl:items-start w-full ml-auto justify-around">
+
+                    <li
+                        class="flex justify-start items-center h-12 w-fit hover:bg-[#333333]  hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold">
+                        <img src="/assets/home_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24 (1).svg" alt=""><span
+                            class="hidden xl:block">&nbsp; Home</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center h-12 w-fit hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold">
+                        <img src="/assets/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span
+                            class="hidden xl:block">&nbsp; Explore </span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center h-12 w-fit hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold">
+                        <img class="w-8 h-8 invert" src="/assets/grok.svg" alt=""><span class="hidden xl:block">&nbsp;
+                            Grok </span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center h-12 w-fit hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold">
+                        <img src="/assets/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span
+                            class="hidden xl:block">&nbsp;
+                            Notifications </span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center h-12 w-fit hover:bg-[#333333] hover:rounded-full  hover:cursor-pointer px-4 text-lg font-bold">
+                        <img src="/assets/chat_bubble_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""><span
+                            class="hidden xl:block">&nbsp; Chat </span>
+                    </li>
+
+                </ul>
             </div>
         </div>
     </div>
