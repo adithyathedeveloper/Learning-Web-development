@@ -23,6 +23,7 @@ app.use((req, res, next) => {
 app.use((req, res, next) => {
   console.log('m2');
   req.middlewares += " We are in middleware 2";
+  console.log(req.middlewares);
   next();
 });
 app.get('/', (req, res) => {

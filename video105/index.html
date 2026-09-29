@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why react?</title>
+    <style>
+        .box1, .box2, .box3 {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: inline-block;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Box 1</div>
+    <div class="box2">Box 2</div>
+    <div class="box3">Box 3</div>
+    <script>
+        setTimeout(() => {
+            const box1 = document.querySelector('.box1');
+            const box2 = document.querySelector('.box2');
+            const box3 = document.querySelector('.box3');
+
+            box1.style.backgroundColor = 'red';
+            box2.style.backgroundColor = 'green';
+            box3.style.backgroundColor = 'blue';
+        }, 1000);
+    </script>
+</body>
+</html>
